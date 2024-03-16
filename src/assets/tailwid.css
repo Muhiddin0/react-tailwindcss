@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  @apply border-2 border-red-300 px-5 mx-auto;
+}
+
+body {
+  background: linear-gradient(to right, white 70%, #7d2cc8 30%);
+}
+
+@media (max-width: 1024px) {
+  body {
+    background: linear-gradient(to bottom, white 70%, #7d2cc8 30%);
+  }
+}
