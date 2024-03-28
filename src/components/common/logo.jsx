@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-export default function Header() {
+import logo from "../../assets/logo.svg";
+
+export default function Logo() {
   return (
-    <header>
-      <div className="container">
-        <div className="font-semibold text-lg text-purple-600">Loog</div>
-      </div>
-    </header>
+    <Link to="/">
+      <img src={logo} alt="iyv logo" />
+    </Link>
   );
 }
